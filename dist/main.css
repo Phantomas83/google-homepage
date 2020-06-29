@@ -28,17 +28,18 @@ img {
 
 /* btns */
 .btn_dark_blue {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
   background-color: #4487fb;
   color: #fff;
   border-radius: 3px;
-  padding: 5px;
+  padding: 7px 13px;
   text-decoration: none;
   transition: background-color 0.4s ease-in-out;
 }
 
 .btn_dark_blue:hover {
-  background-color: #1267fa;
+  background-color: #2b77fa;
 }
 
 /*start*/
@@ -52,6 +53,7 @@ img {
   align-items: center;
   justify-content: flex-end;
   display: flex;
+  padding: 15px 30px;
 }
 
 #wrapper #header .right_side .mnu {
@@ -64,16 +66,54 @@ img {
 }
 
 #wrapper #header .right_side .mnu > li > a {
-  font-size: 12px;
-  transition: color 0.4s ease-in-out;
+  font-size: 14px;
+  transition: border 0.4s ease-in-out;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+#wrapper #header .right_side .mnu > li > a:hover {
+  border-color: #53565b;
+}
+
+#wrapper #header .right_side .mnu > li:last-child {
+  margin-right: 25px;
 }
 
 #wrapper #header .right_side > .button {
   opacity: .7;
   transition: opacity 0.4s ease-in-out;
-  margin-right: 15px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+#wrapper #header .right_side > .button > svg {
+  width: 16px;
+  height: 16px;
 }
 
 #wrapper #header .right_side > .button:hover {
   opacity: 1;
+}
+
+#wrapper .main_search > img {
+  margin: 0 auto;
+}
+
+#wrapper .main_search > .field {
+  position: relative;
+  border-radius: 30px;
+  brder: 1px solid #DFE1ES;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+#wrapper .main_search > .field:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#wrapper .main_search > .field::before {
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("img/search.svg");
 }
