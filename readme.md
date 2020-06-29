@@ -1,0 +1,1 @@
+This is my first project while studying on the pages of the Odin Project. Just the Google home page
